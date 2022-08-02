@@ -1,0 +1,19 @@
+idea for a complete django project
+using front-end --- > html css , js 
+using backend ---- > django 
+using mysql -----> data base
+also use a movie api from internet 
+
+
+defining project :
+a website with two section
+one section to see the name of movies in differnt generes 
+and the name , poster , discription and ...
+also the capabality of adding some of them to liked list
+
+another section is movie quiz 
+there are some images of the movie 
+and for each image there are three options to guess the movie
+note : only registered users can play this game 
+
+thats it . good luck
