@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Models.pages import quizPage
+from Models.pages import quizPage , homePage
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('' , quizPage)
+    path('quiz' , quizPage),
+    path('' , homePage )
 ]
