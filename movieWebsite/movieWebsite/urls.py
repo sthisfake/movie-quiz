@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Models.pages import quizPage , homePage
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('quiz' , quizPage),
-    path('' , homePage )
+    path('' , homePage ),
 ]
