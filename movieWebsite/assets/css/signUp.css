@@ -1,0 +1,91 @@
+*{
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+
+/* 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3E92CC;
+} */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/signImage.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+
+}
+
+
+.signup-form{
+    width: 350px;
+    height: 650px;
+    padding: 20px;
+    text-align: center;
+    background: url(../images/sign.png);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50% , -50%);
+    overflow: hidden;
+}
+
+.signup-form h1{
+    color: #1E1B18;
+    margin-top:60px;
+    font-size: 40px;
+}
+
+.signup-form input{
+    display: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0 16px;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid #3E92CC;
+    border-radius: 12px;
+}
+
+.txtb{
+    margin: 10px 0;
+    background: #FFFAFF
+    border-radius:6px;
+}
+
+.signup-btn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #3E92CC;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.8s;
+    color: #FFFAFF;
+}
+
+.signup-btn:hover{
+    transform: scale(0.96);
+}
+
+.signup-form a {
+    text-decoration: none;
+    color: #1E1B18;
+    font-size: 13px;
+    padding: 10px;
+    padding-right: 80px;
+    padding-left: 80px;
+    transition: 0.8s;
+}
+
+.signup-form a:hover{
+    background-color: #b6cfe0;
+    border-radius: 15px;
+}

@@ -15,12 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Models.pages import quizPage , homePage
+from Models.pages import login, quizPage , homePage , signUp, userPage
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('quiz' , quizPage),
     path('' , homePage ),
+    path('signUp' , signUp),
+    path('quiz' , quizPage),
+    path('login' , login) ,
+    path('user' , userPage)
 ]

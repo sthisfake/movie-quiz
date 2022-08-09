@@ -8,7 +8,7 @@
 .header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(5,0,136,0.5) , rgba(5,0,136,0.5)) , url(../images/test.jpg);
+    background-image: linear-gradient(rgba(5,0,136,0.5) , rgba(15, 120, 190, 0.5)) , url(../images/test.jpg);
     background-position: center;
     background-size: cover;
     overflow-x: hidden;
@@ -97,6 +97,7 @@ nav:hover ul li a{
     margin-right: 15px;
 }
 
+
 .slide-left{
     animation: slideleft 1s linear forwards;
     animation-name: slide-left;
@@ -124,9 +125,9 @@ nav:hover ul li a{
 }
 
 p.slide-left{
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 
 .links.slide-left{
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
