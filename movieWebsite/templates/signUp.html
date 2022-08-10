@@ -10,14 +10,14 @@
     <body>
         <div class="header">
         <div class="signup-form">
-            <form class="" action="/user" method="post">
+            <form action="/user" method="POST">
                 {% csrf_token %}
                 <h1>sign up</h1>
-                <input type="firstName" placeholder="first name"  class="txtb">
-                <input type="lastName" placeholder="last name" class="txtb">
-                <input type="UserName" placeholder="user name" class="txtb">
-                <input type="Email" placeholder="email" class="txtb">
-                <input type="password" placeholder="password" class="txtb">
+                <input type="firstName" name="firstName"   placeholder="first name"  class="txtb">
+                <input type="lastName" name="lastName" placeholder="last name" class="txtb">
+                <input type="UserName"  name="UserName" placeholder="user name" class="txtb">
+                <input type="Email"  name="email" placeholder="email" class="txtb">
+                <input type="password"  name="password" placeholder="password" class="txtb">
                 <input type="submit" value="Sign Up" class="signup-btn">
                 <a href="/login"> already have one?</a>
 
