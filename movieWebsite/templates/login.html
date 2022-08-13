@@ -14,7 +14,9 @@
                 {% csrf_token %}
                 <h1>Log In</h1>
                 <input type="userNameOrPass" name="userNameOrPass" placeholder="username or email" class="txtb">
+                <h2>{{userNameOrPassEror}}</h2>
                 <input type="password" name="password" placeholder="password" class="txtb">
+                <h2>{{passEror}}</h2>
                 <input type="submit" value="login" class="signup-btn">
                 <a href="/signUp"> Dont have an account?</a>
             </form>

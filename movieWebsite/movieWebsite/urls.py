@@ -19,6 +19,7 @@ from Models.pages import login, quizPage , homePage , signUp, userPage
 from django.conf import settings
 from django.conf.urls.static import static
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('' , homePage ),
@@ -27,3 +28,5 @@ urlpatterns = [
     path('login' , login) ,
     path('user' , userPage)
 ]
+
+

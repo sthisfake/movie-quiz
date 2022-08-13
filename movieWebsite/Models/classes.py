@@ -1,3 +1,4 @@
+from multiprocessing import context
 from validate_email_address import validate_email
 import re
 
@@ -106,5 +107,48 @@ class User():
         return status , massage
 
         
+def checkLogin(userNameOrPass , password ) :
+    check  = checkIfUserOrPass(userNameOrPass)
+    if check == None :
+        return False
+    elif check ==  'email':
+        return check
+    else:
+        return check    
 
+def checkUserAuthenticationWithEmail(email , password):
+    user = getUserWithEmail(email)
+    if user.getPassword() == password :
+        return True , user
+    else:
+        return False , None    
+
+
+def checkUserAuthenticationWithUserName(userName , password):
+    user = getUserWithUserName(userName)
+    if user.getPassword() == password :
+        return True , user
+    else:
+        return False , None 
+
+def checkIfUserOrPass(userNameOrPass):
+    status = None
+    for user in allUsers:
+        if userNameOrPass in user.email :
+            status = 'email'
+            return status
+        elif userNameOrPass in user.userName :
+            status = 'userName'
+            return status
+    return status        
+
+def getUserWithEmail(email):
+    for user in allUsers:
+        if user.getEmail() == email :
+            return user 
+
+def getUserWithUserName(userName):
+    for user in allUsers:
+        if user.getUserName() == userName :
+            return user             
 
